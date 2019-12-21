@@ -1,20 +1,20 @@
 /* changing the backgroung on each individual page. -sam w */
 #recipe_finder_html_tag {
     background-color:lightsteelblue;
-    background-image: url("../Css/Food_background2.png");
+    background-image: url("./Food_background2.png");
     background-size: 100%;
 
 }
 
 #drink_finder_body_tag {
     background-color: lightgray;
-    background-image: url("../Css/Drinks_background.png");
+    background-image: url("./Drinks_background.png");
     background-size: 100%;
 }
 
 #how_to_body_tag {
     background-color: lightgray;
-    background-image: url("../Css/HowTo_Background.gif");
+    background-image: url("./HowTo_Background.gif");
     background-size: 100%;
     
 }
