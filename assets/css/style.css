@@ -1,0 +1,62 @@
+/* changing the backgroung on each individual page. -sam w */
+#recipe_finder_html_tag {
+    background-color:lightsteelblue;
+    background-image: url("../Css/Food_background2.png");
+    background-size: 100%;
+
+}
+
+#drink_finder_body_tag {
+    background-color: lightgray;
+    background-image: url("../Css/Drinks_background.png");
+    background-size: 100%;
+}
+
+#how_to_body_tag {
+    background-color: lightgray;
+    background-image: url("../Css/HowTo_Background.gif");
+    background-size: 100%;
+    
+}
+
+.howto_section {
+    background-color: #f2ff0591;
+    font-weight: 600;
+    font-size: larger;
+    text-align: left;
+}
+
+.lead {
+    
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 2px;
+
+}
+.header_section {
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
+}
+.section {
+    
+    background-color: lightgray;
+    padding: 2%;
+    margin: 2%;
+    
+       
+}
+
+.collapsible-header {
+    margin-bottom: 6px;
+}
+
+.collapsible-body {
+    padding: 8px;
+}
+
+
+
+/* For some reason, Materialize was adding in a character counter to our input and displaying it in the bottom right corner of our ingredients input section. This makes it hidden. */
+.character-counter {
+    visibility: hidden;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" id="recipe_finder_html_tag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- The Materialize links below -->
+<!--  -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css"  media="screen,projection"/>
+
+    <!-- I don't know why... but the collapsable items where we put the recepies on the bottom won't work unless I put the exact same line above here, but with type as "text/javascript"-Sam -->
+    <link type="text/javascript" rel="stylesheet" href="./assets/css/materialize.css"  media="screen,projection"/>
+
+    <!-- trying to link in our own stylesheet... -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--  -->
+<!--  -->
+    <!-- Links -->
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <title>Go Go Gadget Recipe Finder</title>
+
+</head>
+<body>
+    <!-- Header/Nav Bar -->
+    <div class="col-12 header_section">
+        <!-- Title and short explination at top section -->
+        <div class="row center">
+            <h1 class="display-3">Go Go Gadget Recipe Finder!</h1>
+            <p class="lead">Find Something to Make Tonight!</p>
+        </div>
+        <!-- Link buttons -->
+        <div class="row">
+            <div class="col right" id="nav_buttons" style="margin-right: 20px;">
+                <a href="./index.html" class="btn"style="background-color: rgb(180, 6, 6)">How Does This Work?</a>
+                <a href="./recipefinder.html" class="btn"style="background-color: rgb(180, 6, 6)">Make a Meal!</a>
+                <a href="./drinkfinder.html" class="btn"style="background-color: rgb(180, 6, 6)">Mix a Drink!</a>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe Input Box -->
+    <div class="col-12 section" id="foodinput">
+        What ingredients do you have? <br>
+        <div id="ingredientListDiv">
+          <ul id="ingList"></ul>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Enter ingredient" id="foodInputBox" type="text" class="validate">
+          <label for="foodInputBox">Enter Ingredient</label>
+        </div> <br>
+
+        <button id="addIngredientButton" class="btn"style="background-color: rgb(180, 6, 6)">Add Ingredient</button>
+        <button id="clearIngredientsButton"class="btn"style="background-color: rgb(180, 6, 6)">Clear Ingredients</button>
+        <button id="foodSearchButton"class="btn"style="background-color: rgb(180, 6, 6)">Find Some Recipes</button>
+
+        <span id="showFilterText"class="btn"style="background-color: rgb(180, 6, 6)">Show Filters</span>
+        <div id="filterDiv">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" id="veganCheckbox" />
+                    <span>Vegan</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" id="vegetarianCheckbox" />
+                    <span>Vegetarian</span>
+                  </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" id="peanutfreeCheckbox" />
+                      <span>Peanut-Free</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" id="alcoholfreeCheckbox" />
+                      <span>Alcohol-Free</span>
+                    </label>
+                </p>      
+            </form>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col s5"></div>
+    <div id="spinnerDiv" class="center-align  col s2">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="recipes" class="col s12 section">
+
+  </div>
+<!-- Import JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- the Materialize javascript required for use -->
+<script type="text/javascript" src="./assets/javascript/materialize.js"></script>
+<!-- <script type="text/javascript" src="C:\Users\bobst\Desktop\materialize-v1.0.0\materialize\js\materialize.min.js"></script> -->
+
+
+<!-- Import our javascript file -->
+<script type="text/javascript" src="./assets/javascript/main.js"></script>
+<!--  -->
+
+</body>
+</html>
