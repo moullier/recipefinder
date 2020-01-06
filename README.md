@@ -1,5 +1,9 @@
 # Go Go Gadget Recipe Finder
 
+Hosted at https://moullier.github.io/recipefinder/
+
+Created by Maria Francis-Moullier, Jacque Tessmer, Sam Wardell and Harley Cripe
+
 ## Purpose of Application
 
 The purpose of our recipe finder is to take a list of ingredients that the user might have at home, and to generate a list of recipes that they can create using some of those ingredients. There is a page that returns recipes for food, as well as a page that allows the user to enter cocktail ingredients that they have on hand and returns a list of potential drinks that they can mix.
