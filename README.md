@@ -1,6 +1,6 @@
 # Go Go Gadget Recipe Finder
 
-Hosted at https://moullier.github.io/recipefinder/
+https://moullier.github.io/recipefinder/recipefinder.html
 
 Created by Maria Francis-Moullier, Jacque Tessmer, Sam Wardell and Harley Cripe
 
