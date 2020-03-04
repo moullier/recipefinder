@@ -1,4 +1,4 @@
-# Go Go Gadget Recipe Finder
+# Recipe Finder
 
 https://moullier.github.io/recipefinder/recipefinder.html
 
