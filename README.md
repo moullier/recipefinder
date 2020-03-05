@@ -1,4 +1,8 @@
-# Go Go Gadget Recipe Finder
+# Recipe Finder
+
+https://moullier.github.io/recipefinder/recipefinder.html
+
+Created by Maria Francis-Moullier, Jacque Tessmer, Sam Wardell and Harley Cripe
 
 ## Purpose of Application
 
