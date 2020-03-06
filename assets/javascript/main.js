@@ -2,14 +2,15 @@ let foodIngredientList = [];
 
 let filterToggle = false;
 
-$("#recipes").hide();
-$("#filterDiv").hide();
-$("#spinnerDiv").hide();
+// on page load
+$(document).ready(function () {
+  $("#recipes").hide();
+  $("#filterDiv").hide();
+  $("#spinnerDiv").hide();
+});
 
 // add ingredients to the list
-$("#addIngredientButton").on("click", function() {
-  addIngredient();
-});
+$("#addIngredientButton").on("click", addIngredient());
 
 function addIngredient() {
   let newIngredient = $("#foodInputBox").val().trim();
@@ -30,6 +31,7 @@ function addIngredient() {
 $("#clearIngredientsButton").on("click", function() {
   foodIngredientList = [];
   $("#ingList").empty();
+  $("#recipes").hide();
 });
 
 

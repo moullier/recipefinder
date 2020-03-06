@@ -1,5 +1,10 @@
 let drinkIngredientList = [];
 
+// on page load
+$(document).ready(function () {
+  $("#recipes").hide();
+});
+
 $("#addDrinkButton").on("click", function () {
   addStuff();
 })
@@ -29,6 +34,7 @@ $('#drinkInputBox').keypress(function(event){
 $("#clearDrinksButton").on("click", function () {
   drinkIngredientList = [];
   $("#ingList").empty();
+  $("#recipes").hide();
 });
 
 $("#DrinkSearchButton").on("click", function showDrinks() {
@@ -59,12 +65,14 @@ $("#DrinkSearchButton").on("click", function showDrinks() {
     }).then(function (response) {
       $("#recipes").show();
       if (response.drinks == "None Found") {
+        $("#recipes").show();
         $("#recipes").empty();
         $("#recipes").text("Sorry! Couldn't find anything matching that.")
         console.log(response)
       } else {
+      
       for (i = 0; i < response.drinks.length; i++) {
-        
+        $("#recipes").show();
         let div = $("#recipes")
         let unorderList = $("<ul>").addClass("collapsible popout").attr("data-collapsible", "accordion")
         let dList = $("<li>")
@@ -154,11 +162,10 @@ $("#DrinkSearchButton").on("click", function showDrinks() {
   } else {
     $("#recipes").show();
     $("#recipes").empty();
-    $("#recipes").text("Please provide a drink to search for.")
+    $("#recipes").text("Please provide an ingredient to search for.")
   }
 })
-function showIngredient() {
-}
+
 $("#clickMe").on("click", function () {
   let input = $("#input").val()
   var queryURL = "https://api.edamam.com/search?q=" + input + "&app_id=71e0d17f&app_key=a0c9342317580b0fbf06152010ee5e86";
@@ -172,7 +179,3 @@ $("#clickMe").on("click", function () {
       // console.log(response);
     });
 });
-
-
-
-// $("#addDrinkButton").on("click", f
