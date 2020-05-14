@@ -1,4 +1,4 @@
-/* changing the backgroung on each individual page. -sam w */
+/* changing the background on each individual page. -sam w */
 #recipe_finder_html_tag {
     background-color:lightsteelblue;
     background-image: url("./Food_background2.png");
@@ -52,6 +52,10 @@
 
 .collapsible-body {
     padding: 8px;
+}
+
+.pageSelectBtn {
+    margin-top: 5px;
 }
 
 

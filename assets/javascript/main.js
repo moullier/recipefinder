@@ -9,13 +9,16 @@ $(document).ready(function () {
   $("#spinnerDiv").hide();
 });
 
-// add ingredients to the list
-$("#addIngredientButton").on("click", addIngredient());
+// add click listener to button
+$("#addIngredientButton").on("click", function () {
+  addIngredient();
+})
+
 
 function addIngredient() {
   let newIngredient = $("#foodInputBox").val().trim();
   $("#foodInputBox").val("");
-  console.log("new Ingredient = " + newIngredient);
+  // console.log("new Ingredient = " + newIngredient);
 
   foodIngredientList.push(newIngredient);
 
@@ -51,10 +54,9 @@ $("#showFilterText").on("click", function() {
 // builds the search string and queries the recipe API, displays results
 $("#foodSearchButton").on("click", function() {
 
-
+  // show the spinner while the API is contacted
   $("#spinnerDiv").show();
 
-    // let input = $("#foodInputBox").val();
   let input = "";
 
   for(let i = 0; i < foodIngredientList.length; i++) {
@@ -89,11 +91,7 @@ $("#foodSearchButton").on("click", function() {
       queryURL = queryURL + "&health=alcohol-free";
     }    
 
-
-    
     console.log("queryURL = " + queryURL);
-
-
 
     // Performing our AJAX GET request
     $.ajax({
